@@ -19,7 +19,7 @@ const RegisterScreen = ({ navigation }) => {
     
     auth.createUserWithEmailAndPassword(email, password)
 .then(authUser => {authUser.User.updateProfile({
-displayName: name, photoURL: imageUrl || "https://nl.wikipedia.org/wiki/Avatar_(computer)#/media/Bestand:MyAvatar_(41).png",
+displayName: name, photoURL: imageUrl || "https://connectingcouples.us/wp-content/uavatar-placeholder.pngploads/2019/07/",
       });})
       .catch(error => alert(error.message));
   };

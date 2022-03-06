@@ -17,7 +17,10 @@ const globalScreenOptions = {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={globalScreenOptions}>
+      <Stack.Navigator
+        // initialRouteName="Home" 
+        screenOptions={globalScreenOptions}
+      >
         <Stack.Screen
           options={{ title: "Let's Sign Up" }}
           name="Login"
@@ -31,7 +34,7 @@ export default function App() {
         <Stack.Screen
           options={{ title: "Back to Login" }}
           name="Home"
-          component={HomeScreen }
+          component={HomeScreen}
         />
       </Stack.Navigator>
 

@@ -31,6 +31,7 @@
 // export { db, auth };
 
 
+import {initializeApp} from "firebase/app";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
@@ -44,6 +45,7 @@ const firebaseConfig = {
   appId: "1:485075696626:web:f758c709f66976365b096b"
 };
 
+// let app = initializeApp(firebaseConfig);
 let app;
 
 if (firebase.apps.length === 0) {
